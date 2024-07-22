@@ -28,7 +28,7 @@ public class ThreadPoolConfig {
         //设置线程生存时间，当超过核心线程之外的线程在生存周期到达之后会被销
         executor.setKeepAliveSeconds(60);
         //设置线程名称前缀
-        executor.setThreadNamePrefix("imagePool-");
+        executor.setThreadNamePrefix("APool-");
         //设置拒绝策略
         executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
         // 等待所有任务结束后再关闭线程池
@@ -51,7 +51,7 @@ public class ThreadPoolConfig {
         // 设置线程生存时间（秒）,当超过了核心线程出之外的线程在生存时间到达之后会被销毁
         executor.setKeepAliveSeconds(60);
         // 设置线程名称前缀
-        executor.setThreadNamePrefix("emailPool-");
+        executor.setThreadNamePrefix("BPool-");
         // 设置拒绝策略
         executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
         // 等待所有任务结束后再关闭线程池
